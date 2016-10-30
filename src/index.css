@@ -20,21 +20,29 @@ $swamp-black:  rgba(32, 43, 42, 1);
 /* margins */
 .mar-0 { margin: 0; }
 
+.mar-tp-25vh { margin-top: 25vh; }
+
 /* padding */
 .pad-0 { padding: 0; }
+
+.pad-lt-10pct { padding-left: 10%; }
 
 /* typography */
 .fs-0875rem { font-size: 0.875rem; } /* 14px */
 .fs-1rem { font-size: 1rem; } /* 16px */
 
 /* overflows */
-.o-hidden { overflow: hidden; }
+.of-hidden { overflow: hidden; }
 
 /* positions */
 .p-abs { position: absolute; }
 .p-rel { position: relative; }
 
 .top-0 { top: 0; }
+
+/* opacity */
+.op-0 { opacity: 0; }
+.op-1 { opacity: 1; }
 
 /* z-index */
 .zi-neg100 { z-index: -100; }
