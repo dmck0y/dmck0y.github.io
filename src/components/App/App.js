@@ -1,19 +1,21 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
 
-class App extends Component {
-  render() {
+const App = React.createClass({
+  domLoaded () {
+    document.addEventListener('DOMContentLoaded', (e) => {
+      console.log(e);
+    });
+  },
+
+  render () {
+    this.domLoaded();
     return (
-      <div className="App">
-        <div className="App-header">
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+      test
       </div>
     );
   }
-}
+});
 
 export default App;
