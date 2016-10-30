@@ -1,3 +1,45 @@
-.App {
-  
+.content {
+  animation-name: intro;
+  animation-duration: 1000ms;
+  animation-delay: 1200ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.4, .26, .14, 1);
+  transform-origin: 0 0 0;
+  transform: scaleX(1.5) translateX(100%);
+  will-change: intro;
+}
+
+@keyframes intro {
+  0% {
+    transform: scaleX(1.5) translateX(100%);
+  }
+  50% {
+    transform: scaleX(1.5) translateX(0%);
+  }
+  100% {
+    transform: scaleX(1) translateX(0%);
+  }
+}
+
+.bg-content {
+  animation-name: slide;
+  animation-duration: 600ms;
+  animation-delay: 800ms;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-out;
+  transform-origin: 0 0 0;
+  transform: scaleX(1.5) translateX(-100%);
+  will-change: slide;
+}
+
+@keyframes slide {
+  0% {
+    transform: scaleX(1.5) translateX(-100%);
+  }
+  75% {
+    transform: scaleX(2) translateX(0%);
+  }
+  100% {
+    transform: scaleX(1) translateX(0%);
+  }
 }

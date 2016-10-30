@@ -1,5 +1,40 @@
-body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
-}
+@import "../node_modules/tachyons/src/_normalize.css";
+@import "../node_modules/tachyons/src/_media-queries.css";
+@import "../node_modules/tachyons/src/_box-sizing.css";
+@import "../node_modules/tachyons/src/_floats.css";
+@import "../node_modules/tachyons/src/_widths.css";
+@import "../node_modules/tachyons/src/_heights.css";
+@import "../node_modules/tachyons/src/_clears.css";
+
+/* colors */
+$white: rgba(255, 255, 255, 1);
+$swamp-black:  rgba(32, 43, 42, 1);
+
+/* text-colors */
+.txt-white { color: $white; }
+
+/* background-colors */
+.bc-swamp-black { background-color: $swamp-black; }
+.bc-swamp-black-tint { background-color: color($swamp-black tint(50%)); }
+
+/* margins */
+.mar-0 { margin: 0; }
+
+/* padding */
+.pad-0 { padding: 0; }
+
+/* typography */
+.fs-0875rem { font-size: 0.875rem; } /* 14px */
+.fs-1rem { font-size: 1rem; } /* 16px */
+
+/* overflows */
+.o-hidden { overflow: hidden; }
+
+/* positions */
+.p-abs { position: absolute; }
+.p-rel { position: relative; }
+
+.top-0 { top: 0; }
+
+/* z-index */
+.zi-neg100 { z-index: -100; }
