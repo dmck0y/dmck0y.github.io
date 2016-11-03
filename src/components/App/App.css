@@ -66,17 +66,50 @@
   }
 }
 
-button {
-  position: relative;
+.image {
+  animation-name: show-image;
+  animation-duration: 900ms;
+  animation-delay: 1300ms;
+  animation-fill-mode: forwards;
+  transform: translateX(90%);
+  opacity: 0;
+  background-image: url('../../../public/tumblr_1.jpg');
+  background-size: cover;
 }
 
-button::after {
-  content: '';
-  position: absolute;
+@keyframes show-image {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn-anime {
+  display: inline-block;
   height: 30px;
-  width: 90%;
+  width: 7rem;
   background: red;
   box-shadow: 0 4px 10px rgba(0,0,0,.25);
-  transform: translateX(-81%);
-  z-index: -1;
+  transition: all 250ms ease;
+
+  &:hover, &:focus {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 10px rgba(0,0,0,.15);
+  }
+}
+
+button {
+  transform: translate(-4px, -14px);
+  width: 7.5rem;
+}
+
+.x-link {
+  border-bottom: 2px solid transparent;
+  transition: all 350ms ease;
+
+  &:hover, &:focus {
+    border-bottom: 2px solid #fff;
+  }
 }

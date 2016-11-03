@@ -8,6 +8,7 @@
 
 /* colors */
 $white: rgba(255, 255, 255, 1);
+$grey90: rgba(90, 90, 90, 1);
 $swamp-black: rgba(32, 43, 42, 1);
 $swamp-black-tint10: color($swamp-black tint(10%));
 $swamp-black-tint50: color($swamp-black tint(50%));
@@ -24,6 +25,7 @@ body {
 .bg-swamp-black-grad { background: linear-gradient($swamp-black-tint10, $swamp-black); }
 
 /* background-colors */
+.bc-grey-90 { background-color: $grey90; }
 .bc-swamp-black { background-color: $swamp-black; }
 .bc-swamp-black-tint { background-color: $swamp-black-tint50; }
 .bc-eletric-aqua { background-color: $eletric-aqua; }
@@ -52,6 +54,8 @@ body {
 
 .mar-tp-24vh { margin-top: 24vh; }
 
+.mar_1p5-rem-lt { margin-left: 1.5rem; }
+
 /* padding */
 .pad-0 { padding: 0; }
 
@@ -63,6 +67,8 @@ body {
 
 .pad_1-rem-rt { padding-right: 1rem; }
 .pad_1p5-rem-rt { padding-right: 1.5rem; }
+.pad_2-rem-rt { padding-right: 2rem; }
+.pad_2p5-rem-rt { padding-right: 2.5rem; }
 
 .pad_1-rem-lt { padding-left: 1rem; }
 .pad_1p5-rem-lt { padding-left: 1.5rem; }
@@ -80,6 +86,8 @@ p { font-family: Inconsolata, monospace; }
 .fw-200 { font-weight: 200; }
 .fw-500 { font-weight: 500; }
 .fw-700 { font-weight: 700; }
+
+.measure-30 { max-width: 30rem; }
 
 .ln_hgt-1p5 { line-height: 1.5; }
 
@@ -107,3 +115,9 @@ p { font-family: Inconsolata, monospace; }
 
 /* z-index */
 .zi-neg100 { z-index: -100; }
+
+@media (max-width: 600px) {
+  .fullscreen {
+    width: 100%;
+  }
+}
