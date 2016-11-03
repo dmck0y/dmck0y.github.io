@@ -28,7 +28,7 @@ var nodePaths = (process.env.NODE_PATH || '')
 module.exports = {
   appBuild: resolveApp('build'),
   appPublic: resolveApp('public'),
-  appHtml: resolveApp('public/index.html'),
+  appHtml: resolveApp('./index.html'),
   appIndexJs: resolveApp('src/index.jsx'),
   appPackageJson: resolveApp('package.json'),
   appSrc: resolveApp('src'),
