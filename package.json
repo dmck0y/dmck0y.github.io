@@ -32,6 +32,7 @@
     "find-cache-dir": "0.1.1",
     "fs-extra": "0.30.0",
     "gh-pages": "^0.11.0",
+    "git-scripts": "^0.2.1",
     "gzip-size": "3.0.0",
     "html-webpack-plugin": "2.24.0",
     "http-proxy-middleware": "0.17.2",
@@ -48,6 +49,7 @@
     "semistandard": "^9.1.0",
     "strip-ansi": "3.0.1",
     "style-loader": "0.13.1",
+    "surge": "^0.18.0",
     "tachyons": "^4.5.4",
     "url-loader": "0.5.7",
     "webpack": "1.13.2",
@@ -59,7 +61,11 @@
     "react": "^15.3.2",
     "react-dom": "^15.3.2"
   },
-  "homepage": "http://dmck0y.github.io/dmck0y.github.io",
+  "git": {
+    "scripts": {
+      "pre-push": "surge --project ./ --domain davidmckoy.ca"
+    }
+  },
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
