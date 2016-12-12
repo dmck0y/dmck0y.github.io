@@ -15,7 +15,7 @@ $swamp-black-tint50: color($swamp-black tint(50%));
 $eletric-aqua: rgba(59, 207, 193, 1);
 
 body {
-  font-family: Inconsolata, monospace;
+  font-family: 'Open sans', sans-serif;
   overflow: hidden;
 }
 
@@ -77,11 +77,12 @@ body {
 .pad-lt-10pct { padding-left: 10%; }
 
 /* typography */
-h1 { font-family: "futura-pt", sans-serif; }
-p { font-family: Inconsolata, monospace; }
+h1 { font-family: 'Poppins', sans-serif; }
+p, nav a { letter-spacing: 0.02rem; }
 
 .fs-0875rem { font-size: 0.875rem; } /* 14px */
 .fs-1rem { font-size: 1rem; } /* 16px */
+.fs-1p25rem { font-size: 1.25rem; } /* 16px */
 .fs-1p5rem { font-size: 1.5rem; } /* 24px */
 
 .fw-200 { font-weight: 200; }
