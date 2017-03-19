@@ -14,7 +14,7 @@ $swamp-black-tint10: color($swamp-black tint(10%));
 $swamp-black-tint50: color($swamp-black tint(50%));
 $eletric-aqua: rgba(59, 207, 193, 1);
 
-body {
+body, button {
   font-family: 'Open sans', sans-serif;
   overflow: hidden;
 }
