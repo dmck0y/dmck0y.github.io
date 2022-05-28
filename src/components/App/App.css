@@ -73,7 +73,7 @@
   animation-fill-mode: forwards;
   transform: translateX(90%);
   opacity: 0;
-  background-image: url('../../../public/tumblr_1.jpg');
+  background-image: url('https://res.cloudinary.com/wpb-assets/image/upload/v1610073789/wpb/glasssheet_compressed_j8q89g.jpg');
   background-size: cover;
 }
 
